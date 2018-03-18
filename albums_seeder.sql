@@ -1,10 +1,7 @@
 USE codeup_test_db;
--- INSERT INTO albums (artist, album, release_date, sales, genre)
--- VALUES ('Michael Jackson', 'Thriller', 1982, 47.3, 'Pop, Rock, R&B');
 
 INSERT INTO albums (artist, album, release_date, genre, sales)
 VALUES
-('Michael Jackson',	'Thriller', 1982, 'Pop, Rock, R&B', 47.3),
 ('Eagles', 'Their Greatest Hits 1971–1975',	1976,	'Rock, Soft rock, Folk rock', 32),
 ('Pink Floyd',	'The Dark Side of the Moon',	1973,	'Progressive rock', 24.2),
 ('Bee Gees',	'Saturday Night Fever',	1977,	'Disco',	21.6),

@@ -25,5 +25,5 @@ SELECT album FROM albums WHERE release_date BETWEEN 1990 AND 1999;
 SELECT 'Which albums had less than 20 million certified sales' AS '//////////////////////////////////////////////////////////////////////';
 SELECT album, sales FROM albums WHERE sales < 20;
 
-SELECT 'All the albums with a genre of "Rock". Why do these query results not include albums with a genre of "Hard rock" or "Progressive rock"?' AS '//////////////////////////////////////////////////////////////////////';
+SELECT 'All the albums with a genre of "Rock", "Hard rock", "Progressive rock".' AS '//////////////////////////////////////////////////////////////////////';
 SELECT album, genre FROM albums WHERE genre = 'Rock' || genre = 'Hard rock' || genre = 'Progressive rock';
