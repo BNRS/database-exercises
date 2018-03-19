@@ -53,7 +53,7 @@ SELECT *
 FROM employees
 WHERE last_name LIKE 'E%' AND last_name LIKE '%E';
 
-# Find all employees hired in the 90s and born on Christmas
+# Find all employees hired in the 90s and born on Christmas.
 SELECT *
 FROM employees
 WHERE hire_date LIKE '199%' AND birth_date LIKE '%-12-25';
