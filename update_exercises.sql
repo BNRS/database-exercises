@@ -28,7 +28,7 @@ USE codeup_test_db;
 -- UPDATE albums SET sales = sales*10;
 -- SELECT * from albums;
 
--- SELECT 'Albums released before 1980' AS 'info';
+-- SELECT 'Albums released before 1980 back to the 1800's' AS 'info';
 -- UPDATE albums set release_date = release_date - 99;
 -- SELECT * from albums WHERE release_date<1980;
 

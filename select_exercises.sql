@@ -27,3 +27,7 @@ SELECT album, sales FROM albums WHERE sales < 20;
 
 SELECT 'All the albums with a genre of "Rock", "Hard rock", "Progressive rock".' AS '//////////////////////////////////////////////////////////////////////';
 SELECT album, genre FROM albums WHERE genre = 'Rock' || genre = 'Hard rock' || genre = 'Progressive rock';
+
+
+
+-- you can use SELECT * FROM to replace first select statement;
