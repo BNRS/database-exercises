@@ -5,11 +5,12 @@ SELECT *
 FROM employees
 WHERE first_name IN ('Irena', 'Vidya', 'Maya');
 
+# Update your query for 'Irena', 'Vidya', or 'Maya' to use OR instead of IN — 709 rows.
 SELECT *
 FROM employees
 WHERE first_name = 'Irena' OR first_name = 'Vidya' OR first_name = 'Maya';
 
-# Add a condition to the previous query to find everybody with those names who is also male
+# Add a condition to the previous query to find everybody with those names who is also male - 441
 SELECT *
 FROM employees
 WHERE (first_name = 'Irena' OR first_name = 'Vidya' OR first_name = 'Maya')
@@ -25,15 +26,17 @@ SELECT *
 FROM employees
 WHERE hire_date >= '1990-01-01' AND hire_date <= '1999-12-31';
 
+# Find all employees hired in the 90s
 SELECT *
 FROM employees
 WHERE hire_date BETWEEN '1990-01-01' AND '1999-12-31';
 
+# Find all employees hired in the 90s
 SELECT *
 FROM employees
 WHERE hire_date LIKE '199%';
 
-# Find all employees born on Christmas
+# Find all employees born on Christmas - 842 rows
 SELECT *
 FROM employees
 WHERE birth_date LIKE '%-12-25';
@@ -42,6 +45,16 @@ WHERE birth_date LIKE '%-12-25';
 SELECT *
 FROM employees
 WHERE last_name LIKE '%q%';
+
+# names containing any combination of s'us'
+SELECT first_name
+FROM employees
+WHERE first_name LIKE '%sus%';
+
+# seven names containing 'sus'
+SELECT DISTINCT first_name
+FROM employees
+WHERE first_name LIKE '%sus%';
 
 # Find all employees whose last name starts or ends with 'E'
 SELECT *
