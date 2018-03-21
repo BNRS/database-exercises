@@ -12,3 +12,5 @@ CREATE TABLE albums (
     PRIMARY KEY (id)
 );
 
+
+

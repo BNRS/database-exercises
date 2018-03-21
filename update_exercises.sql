@@ -12,8 +12,8 @@ USE codeup_test_db;
 -- Change 'Michael Jackson' to 'Peter Jackson'
 -- Add SELECT statements after each UPDATE so you can see the results of your handiwork
 
--- SELECT 'All albums from albums table' AS '//////////////////////////////////////////////////////////////////////';
--- SELECT album FROM albums;
+SELECT 'All albums from albums table' AS '//////////////////////////////////////////////////////////////////////';
+SELECT album FROM albums;
 --
 -- SELECT 'Which albums were released before 1980' AS '//////////////////////////////////////////////////////////////////////';
 -- SELECT album, release_date FROM albums WHERE release_date < 1980;
