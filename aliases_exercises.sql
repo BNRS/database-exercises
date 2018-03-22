@@ -37,13 +37,15 @@ describe dept_emp;
 describe dept_manager;
 describe employees;
 describe salaries;
-describe titles;
+
+
+
+
 
 
 # Add an index to make sure all album names combined with the artist are unique.
 # Try to add duplicates to test the constraint.
 USE codeup_test_db;
-
 
 # Add an index to make sure all album names combined with the artist are unique (Multiple-Column Indexes)
 ALTER TABLE albums
@@ -54,9 +56,8 @@ ALTER TABLE albums
 INSERT INTO albums (artist, album, release_date, genre, sales)
   VALUE ('Eagles', 'Their Greatest Hits 1971–1975',	1976,	'Rock, Soft rock, Folk rock', 32);
 
-
-# DESCRIBE albums;
-# SHOW KEYS FROM albums;
+DESCRIBE albums;
+SHOW KEYS FROM albums;
 
 
 
